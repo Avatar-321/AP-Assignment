@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -54,7 +54,7 @@
                         <a href="doctors.html"> <i class="menu-icon fa fa-user-md" ></i>Doctors </a>
                     </li>
                     <li class="active">
-                        <a href="contact.html"> <i class="menu-icon fa fa-info-circle" ></i>Contact </a>
+                        <a href="contact.html"> <i class="menu-icon fa fa-info-circle" ></i>Feedback </a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -84,39 +84,7 @@
         <!-- Header-->
 
 
-        <div class="content mt-3">
-            <div class="animated fadeIn">
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <strong class="card-title">Users Table</strong>
-                            </div>
-                            <div class="card-body">
-                                <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Address</th>
-                                            <th scope="col">Mobile Number</th>
-                                            <th scope="col">Password</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody id="prodTable">
-
-                                        </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div><!-- .animated -->
-        </div><!-- .content -->
-
+        
 
 
 
@@ -160,7 +128,7 @@
                                                 Number</label>
                                             <input id="input5" name="cc-exp" type="tel" class="form-control cc-exp"
                                                 value="" data-val="true"
-                                                data-val-required="Please enter the card expiration"
+                                                data-val-required="Please enter the Mobile Number"
                                                 data-val-cc-exp="Please enter a valid month and year" placeholder=""
                                                 autocomplete="cc-exp" required>
                                             <span class="help-block" data-valmsg-for="cc-exp"
@@ -172,8 +140,8 @@
                                         <div class="input-group">
                                             <input id="input6" name="x_card_code" type="tel"
                                                 class="form-control cc-cvc" value="" data-val="true"
-                                                data-val-required="Please enter the security code"
-                                                data-val-cc-cvc="Please enter a valid security code" autocomplete="off" required>
+                                                data-val-required="Please enter the password"
+                                                data-val-cc-cvc="Please enter a valid password" autocomplete="off" required>
                                         </div>
                                     </div>
                                 </div>
@@ -201,6 +169,38 @@
 
 
         </div><!-- /#right-panel -->
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Users Table</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table-export" class="table table-striped table-dark table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Address</th>
+                                            <th scope="col">Mobile Number</th>
+                                            <th scope="col">Password</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="prodTable">
+
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div><!-- .animated -->
+        </div><!-- .content -->
 
         <!-- Right Panel -->
 
