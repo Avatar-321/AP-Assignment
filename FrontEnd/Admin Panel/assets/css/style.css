@@ -1001,29 +1001,29 @@ textarea {
   width: 100%; }
 
 aside.left-panel {
-  background: #272c33;
+  background: #034197;
   display: table-cell;
   height: 100vh;
   min-height: 100%;
   padding: 0 25px;
   vertical-align: top;
-  width: 280px;
+  width: 250px;
   -webkit-transition:width 0.3s ease;
   transition: width 0.3s ease; }
 
 .navbar {
-  background: #272c33;
+  background: #034197;
   border-radius: 0;
   border: none;
   display: block;
-  margin: 0 0 100px;
+  margin-top: 75px;
   padding: 0; }
   .navbar .navbar-header {
     float: none;
     text-align: center;
     width: 100%; }
   .navbar .navbar-brand {
-    border-bottom: 1px solid #4e4e52;
+   
     color: #f1f2f7 !important;
     font-family: 'Open Sans';
     font-size: 22px;
@@ -1312,7 +1312,7 @@ header.fixed-top {
   position: inherit; }
 
 .menutoggle {
-  background: #e74c3c;
+  background: #000000;
   border-radius: 50%;
   color: #fff !important;
   cursor: pointer;
@@ -1569,7 +1569,7 @@ header .form-inline {
     width: 50px;
     padding:12px 0;
     padding: 0.75rem 0;
-    margin: 0 !important !important;
+    margin: 0 !important ;
     color: #fff;
     outline: 0;
     text-align: center;
@@ -2362,7 +2362,11 @@ header .form-inline {
     .card .card-header .card-actions {
       right: 0;
       top: 0.75rem;
-      position: absolute; } }
+      position: absolute; }
+    .navbar-default {
+    display: flex;
+    flex-direction: column;
+} }
 
 @media (max-width: 992px) {
   [class*="col"].no-padding {

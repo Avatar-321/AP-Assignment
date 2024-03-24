@@ -31,13 +31,11 @@
 
 </head>
 
-<body class="bg-dark mt-5 p-5">
-
-
-    <div class="sufee-login d-flex align-content-center flex-wrap mt-5 p-5">
-        <div class="container">
+<body>
+    <div class="container">
             <div class="login-content">
-                <div class="login-logo">
+                <div class="login-logo"> 
+                    <img src="images/adminlogin.png" alt="">
                 </div>
                 <div class="login-form">
                     <div>
@@ -56,7 +54,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    
     <script>
         function login() {
             var username = document.getElementById("yourUsername").value;
@@ -78,5 +76,66 @@
 
 
 </body>
+<style>
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.login-content {
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success {
+    background-color: #134b9e;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #062e9b;
+}
+
+</style>
 </html>
